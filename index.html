@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to Dyrielle - GitHub Profile">
+    <title>Welcome to Dyrielle's GitHub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #24292e;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            width: 100%;
+            padding: 50px;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #e1e4e8;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #24292e;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #586069;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            margin-bottom: 30px;
+        }
+
+        .intro p {
+            font-size: 1.1em;
+            color: #24292e;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .skills {
+            margin-bottom: 30px;
+        }
+
+        .skills h2 {
+            font-size: 1.8em;
+            color: #24292e;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+
+        .skills ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding-left: 0;
+        }
+
+        .skills li {
+            background: #f6f8fa;
+            padding: 12px 20px;
+            border-radius: 6px;
+            border-left: 3px solid #667eea;
+            transition: transform 0.2s ease;
+        }
+
+        .skills li:hover {
+            transform: translateX(5px);
+            background: #e1e4e8;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #e1e4e8;
+        }
+
+        .contact h2 {
+            font-size: 1.8em;
+            color: #24292e;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .skills ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>👋 Hello, I'm Dyrielle!</h1>
+            <p class="subtitle">Welcome to my GitHub profile</p>
+        </header>
+
+        <section class="intro">
+            <p>
+                I'm passionate about technology and software development. This repository is part of my 
+                journey learning GitHub and open-source collaboration. I'm excited to explore new 
+                technologies, contribute to projects, and grow as a developer.
+            </p>
+            <p>
+                Through this GitHub Skills course, I'm learning essential skills like creating branches, 
+                making commits, opening pull requests, and collaborating with others. Every project is 
+                an opportunity to learn something new!
+            </p>
+        </section>
+
+        <section class="skills">
+            <h2>🚀 What I'm Learning</h2>
+            <ul>
+                <li>Git & GitHub</li>
+                <li>Version Control</li>
+                <li>Pull Requests</li>
+                <li>Code Collaboration</li>
+                <li>Open Source</li>
+                <li>Web Development</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>📫 Connect With Me</h2>
+            <div class="social-links">
+                <a href="https://github.com/dyrielle" target="_blank">GitHub Profile</a>
+                <a href="https://github.com/dyrielle/skills-introduction-to-github" target="_blank">This Repository</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
